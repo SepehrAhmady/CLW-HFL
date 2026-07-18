@@ -1,0 +1,16 @@
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.1
+torch==2.3.1
+phe==1.5.0
+PyYAML==6.0.1
+matplotlib==3.8.4
+tqdm==4.66.4
+
+# Notes:
+# - `phe` (python-paillier) provides real Paillier homomorphic encryption,
+#   used in cloud_aggregate.py for the PHE-wrapped aggregation step.
+# - torch is CPU-only by default via pip; on the target Dell Precision 3530
+#   this is sufficient. If a CUDA-capable Quadro P600 build is desired,
+#   install the matching `torch` wheel for your CUDA version instead of
+#   this line (see https://pytorch.org/get-started/locally/).

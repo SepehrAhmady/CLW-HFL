@@ -1,0 +1,8 @@
+.venv/
+.idea/
+__pycache__/
+*.pth
+*.pyc
+data/processed/*.npz
+UNSW_NB15/
+checkpoints/
