@@ -1,0 +1,58 @@
+{
+  "layer": "C",
+  "head_name": "head_binary",
+  "classes": [
+    1,
+    6
+  ],
+  "global_to_local": {
+    "1": 0,
+    "6": 1
+  },
+  "local_to_global": {
+    "0": 1,
+    "1": 6
+  },
+  "num_clients": 10,
+  "alpha": 0.5,
+  "seed": 42,
+  "num_rounds": 15,
+  "total_training_time_sec": 118.61092390000704,
+  "final_val_metrics": {
+    "accuracy": 0.9945740013853613,
+    "precision_macro": 0.9575972704777821,
+    "recall_macro": 0.949131679389313,
+    "f1_macro": 0.9533222232350107,
+    "precision_weighted": 0.9945286200268592,
+    "recall_weighted": 0.9945740013853613,
+    "f1_weighted": 0.994548671790525,
+    "per_class": {
+      "0": {
+        "precision": 0.9182879377431906,
+        "recall": 0.9007633587786259,
+        "f1": 0.9094412331406551,
+        "support": 262
+      },
+      "1": {
+        "precision": 0.9969066032123736,
+        "recall": 0.9975,
+        "f1": 0.9972032133293662,
+        "support": 8400
+      }
+    },
+    "confusion_matrix": [
+      [
+        236,
+        26
+      ],
+      [
+        21,
+        8379
+      ]
+    ],
+    "labels": [
+      0,
+      1
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "layer": "C",
+  "head_name": "head_binary",
+  "classes": [
+    1,
+    6
+  ],
+  "global_to_local": {
+    "1": 0,
+    "6": 1
+  },
+  "local_to_global": {
+    "0": 1,
+    "1": 6
+  },
+  "num_clients": 10,
+  "alpha": 0.5,
+  "seed": 42,
+  "num_rounds": 15,
+  "secure_aggregation_enabled": true,
+  "dp_enabled": true,
+  "phe_enabled": true,
+  "paillier_key_gen_time_sec": 0.02166680002119392,
+  "total_training_time_sec": 3292.880504300003,
+  "final_val_metrics": {
+    "accuracy": 0.8543061648580005,
+    "precision_macro": 0.5845247564422045,
+    "recall_macro": 0.915636586695747,
+    "f1_macro": 0.6041232092653497,
+    "precision_weighted": 0.9742090130427988,
+    "recall_weighted": 0.8543061648580005,
+    "f1_weighted": 0.8997939749657552,
+    "per_class": {
+      "0": {
+        "precision": 0.16974900924702774,
+        "recall": 0.9809160305343512,
+        "f1": 0.2894144144144144,
+        "support": 262
+      },
+      "1": {
+        "precision": 0.9993005036373811,
+        "recall": 0.8503571428571428,
+        "f1": 0.9188320041162851,
+        "support": 8400
+      }
+    },
+    "confusion_matrix": [
+      [
+        257,
+        5
+      ],
+      [
+        1257,
+        7143
+      ]
+    ],
+    "labels": [
+      0,
+      1
+    ]
+  },
+  "final_privacy": {
+    "epsilon": 82615.1292546497,
+    "delta": 1e-05,
+    "best_alpha": 1.1,
+    "num_rounds_accounted": 15
+  }
+}

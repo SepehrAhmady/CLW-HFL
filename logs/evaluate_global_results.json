@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "split": "test",
+    "n_samples_total": 82332,
+    "routing": {
+      "Exploits": "A",
+      "Shellcode": "A",
+      "Fuzzers": "A",
+      "Generic": "A",
+      "Normal": "A",
+      "Reconnaissance": "B",
+      "DoS": "B",
+      "Worms": "B",
+      "Analysis": "B",
+      "Backdoor": "C"
+    },
+    "methodology_note": "Oracle routing: each test sample is routed to its responsible layer using the TRUE label (not a predicted one). This is the upper-bound evaluation described in Part 6 of the CLW-HFL spec. In a real deployment, a separate routing classifier would be needed that does not have access to the true label.",
+    "checkpoint_used": {
+      "A": "checkpoints\\layer_A_final.pth",
+      "B": "checkpoints\\layer_B_final.pth",
+      "C": "checkpoints\\cloud_global.pth (cloud_global.pth -- post-Cloud-aggregation, NOT layer_C_final.pth)"
+    },
+    "global_metrics_summary": {
+      "accuracy": 0.7810328912209105,
+      "f1_macro": 0.5820480372456058,
+      "f1_weighted": 0.8068063537001746
+    }
+  },
+  "global_metrics": {
+    "accuracy": 0.7810328912209105,
+    "precision_macro": 0.5865579868995813,
+    "recall_macro": 0.6987569915516278,
+    "f1_macro": 0.5820480372456058,
+    "precision_weighted": 0.848248270277215,
+    "recall_weighted": 0.7810328912209105,
+    "f1_weighted": 0.8068063537001746,
+    "per_class": {
+      "0": {
+        "precision": 0.08035714285714286,
+        "recall": 0.053175775480059084,
+        "f1": 0.064,
+        "support": 677
+      },
+      "1": {
+        "precision": 1.0,
+        "recall": 0.9742710120068611,
+        "f1": 0.9869678540399652,
+        "support": 583
+      },
+      "2": {
+        "precision": 0.766751269035533,
+        "recall": 0.7388114453411592,
+        "f1": 0.752522107360817,
+        "support": 4089
+      },
+      "3": {
+        "precision": 0.7982549131533883,
+        "recall": 0.8793568091987064,
+        "f1": 0.8368454798033768,
+        "support": 11132
+      },
+      "4": {
+        "precision": 0.22468296269068186,
+        "recall": 0.4033322335862752,
+        "f1": 0.28859773371104813,
+        "support": 6062
+      },
+      "5": {
+        "precision": 0.9993948729233139,
+        "recall": 0.962694080864819,
+        "f1": 0.980701233501579,
+        "support": 18871
+      },
+      "6": {
+        "precision": 0.9102984530789361,
+        "recall": 0.7427297297297297,
+        "f1": 0.8180208069773326,
+        "support": 37000
+      },
+      "7": {
+        "precision": 0.9251297257227576,
+        "recall": 0.7139588100686499,
+        "f1": 0.8059412334517275,
+        "support": 3496
+      },
+      "8": {
+        "precision": 0.10532591414944356,
+        "recall": 0.701058201058201,
+        "f1": 0.18313752591568763,
+        "support": 378
+      },
+      "9": {
+        "precision": 0.055384615384615386,
+        "recall": 0.8181818181818182,
+        "f1": 0.1037463976945245,
+        "support": 44
+      }
+    },
+    "confusion_matrix": [
+      [
+        36,
+        0,
+        607,
+        0,
+        0,
+        0,
+        34,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        568,
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        387,
+        0,
+        3021,
+        0,
+        0,
+        0,
+        333,
+        198,
+        0,
+        150
+      ],
+      [
+        0,
+        0,
+        0,
+        9789,
+        815,
+        2,
+        186,
+        0,
+        340,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1369,
+        2445,
+        8,
+        1914,
+        0,
+        326,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        448,
+        179,
+        18167,
+        9,
+        0,
+        68,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        656,
+        7345,
+        1,
+        27481,
+        0,
+        1517,
+        0
+      ],
+      [
+        25,
+        0,
+        312,
+        0,
+        0,
+        0,
+        199,
+        2496,
+        0,
+        464
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        98,
+        0,
+        14,
+        0,
+        265,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        0,
+        36
+      ]
+    ],
+    "labels": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
